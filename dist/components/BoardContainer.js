@@ -234,7 +234,7 @@ class BoardContainer extends _react.Component {
         getCardDetails: this.getCardDetails,
         index: index,
         droppable: droppable === undefined ? true : droppable,
-        oiLaneDelete: onLaneDelete
+        onLaneDelete: onLaneDelete
       }, otherProps, passthroughProps));
 
       return draggable && laneDraggable ? _react.default.createElement(_Draggable.default, {

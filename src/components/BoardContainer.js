@@ -190,7 +190,7 @@ class BoardContainer extends Component {
                   getCardDetails={this.getCardDetails}
                   index={index}
                   droppable={droppable === undefined ? true : droppable}
-                  oiLaneDelete={onLaneDelete}
+                  onLaneDelete={onLaneDelete}
                   {...otherProps}
                   {...passthroughProps}
                 />
