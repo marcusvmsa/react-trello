@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -25,14 +25,14 @@ export const GlobalStyle = createGlobalStyle`
       position: absolute;
       background: transparent none repeat scroll 0 0;
       border: 6px solid transparent;
-      transition: all 0.3s ease 0ms; 
+      transition: all 0.3s ease 0ms;
       left: 50%; }
   .popover.popover--bottom {
     flex-flow: column nowrap; }
     .popover.popover--bottom .popover__content {
       left: 50%;
-      transform: translateX(-50%); }      
-  
+      transform: translateX(-50%); }
+
   .popover.popover--active .popover__content {
     visibility: visible;
     opacity: 1;
@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
   .popover[class*="menu"] .popover__content {
     border-radius: 3px;
     min-width: 7em;
-    flex-flow: column nowrap;    
+    flex-flow: column nowrap;
     color: #000; }
     .popover[class*="menu"] .popover__content a {
       color: rgba(255, 255, 255, 0.56);
@@ -51,9 +51,13 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #00bcd4 !important;
         color: #37474F; }
 
-		
+
   .comPlainTextContentEditable {
     -webkit-user-modify: read-write-plaintext-only;
+  }
+  .comPlainTextContentEditable:focus {
+    outline: none;
+    border: 1px solid #006a95;
   }
 
   .comPlainTextContentEditable--has-placeholder::before {
@@ -62,15 +66,15 @@ export const GlobalStyle = createGlobalStyle`
     color: inherit;
     cursor: text;
   }
-  
+
   .react_trello_dragClass {
     transform: rotate(3deg);
   }
-  
+
   .react_trello_dragLaneClass {
     transform: rotate(3deg);
-  }  
-  
+  }
+
   .icon-overflow-menu-horizontal:before {
     content: "\\E91F";
   }
