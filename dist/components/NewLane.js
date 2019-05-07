@@ -37,7 +37,7 @@ class NewLane extends _react.Component {
   render() {
     const onCancel = this.props.onCancel;
     return _react.default.createElement(_Base.Section, null, _react.default.createElement(_Base.LaneTitle, null, _react.default.createElement(_EditableLabel.default, {
-      placeholder: "title",
+      placeholder: "t\xEDtulo",
       onChange: val => this.updateField('title', val),
       autoFocus: true
     })), _react.default.createElement(_Base.NewLaneButtons, null, _react.default.createElement(_Elements.AddButton, {

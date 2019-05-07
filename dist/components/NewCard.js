@@ -41,14 +41,14 @@ class NewCard extends _react.Component {
         background: '#E3E3E3'
       }
     }, _react.default.createElement(_Base.CardWrapper, null, _react.default.createElement(_Base.CardHeader, null, _react.default.createElement(_Base.CardTitle, null, _react.default.createElement(_EditableLabel.default, {
-      placeholder: "title",
+      placeholder: "t\xEDtulo",
       onChange: val => this.updateField('title', val),
       autoFocus: true
     })), _react.default.createElement(_Base.CardRightContent, null, _react.default.createElement(_EditableLabel.default, {
-      placeholder: "label",
+      placeholder: "etiqueta",
       onChange: val => this.updateField('label', val)
     }))), _react.default.createElement(_Base.Detail, null, _react.default.createElement(_EditableLabel.default, {
-      placeholder: "description",
+      placeholder: "descri\xE7\xE3o",
       onChange: val => this.updateField('description', val)
     }))), _react.default.createElement(_Elements.AddButton, {
       onClick: this.handleAdd

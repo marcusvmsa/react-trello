@@ -20,14 +20,14 @@ class NewCard extends Component {
         <CardWrapper>
           <CardHeader>
             <CardTitle>
-              <EditableLabel placeholder="title" onChange={val => this.updateField('title', val)} autoFocus />
+              <EditableLabel placeholder="título" onChange={val => this.updateField('title', val)} autoFocus />
             </CardTitle>
             <CardRightContent>
-              <EditableLabel placeholder="label" onChange={val => this.updateField('label', val)} />
+              <EditableLabel placeholder="etiqueta" onChange={val => this.updateField('label', val)} />
             </CardRightContent>
           </CardHeader>
           <Detail>
-            <EditableLabel placeholder="description" onChange={val => this.updateField('description', val)} />
+            <EditableLabel placeholder="descrição" onChange={val => this.updateField('description', val)} />
           </Detail>
         </CardWrapper>
         <AddButton onClick={this.handleAdd}>Confirmar</AddButton>
