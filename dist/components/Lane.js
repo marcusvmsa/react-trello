@@ -266,9 +266,9 @@ class Lane extends _react.Component {
         className: "menu",
         position: "bottom",
         trigger: _react.default.createElement(_Elements.MenuButton, null, "\u22EE")
-      }, _react.default.createElement(_Elements.LaneMenuHeader, null, _react.default.createElement(_Elements.LaneMenuTitle, null, "Lane actions"), _react.default.createElement(_Elements.DeleteWrapper, null, _react.default.createElement(_Elements.GenDelButton, null, "\u2716"))), _react.default.createElement(_Elements.LaneMenuContent, null, _react.default.createElement(_Elements.LaneMenuItem, {
+      }, _react.default.createElement(_Elements.LaneMenuHeader, null, _react.default.createElement(_Elements.LaneMenuTitle, null, "A\xE7\xF5es"), _react.default.createElement(_Elements.DeleteWrapper, null, _react.default.createElement(_Elements.GenDelButton, null, "\u2716"))), _react.default.createElement(_Elements.LaneMenuContent, null, _react.default.createElement(_Elements.LaneMenuItem, {
         onClick: this.removeLane
-      }, "Delete Lane...")));
+      }, "Deletar...")));
     });
     (0, _defineProperty2.default)(this, "renderHeader", () => {
       const _this$props4 = this.props,

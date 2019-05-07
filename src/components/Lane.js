@@ -167,7 +167,18 @@ class Lane extends Component {
   }
 
   renderDragContainer = isDraggingOver => {
-    const {laneSortFunction, editable, hideCardDeleteIcon, tagStyle, cardStyle, draggable, cardDraggable, cards, cardDragClass, id} = this.props
+    const {
+      laneSortFunction,
+      editable,
+      hideCardDeleteIcon,
+      tagStyle,
+      cardStyle,
+      draggable,
+      cardDraggable,
+      cards,
+      cardDragClass,
+      id
+    } = this.props
     const {addCardMode, collapsed} = this.state
 
     const showableCards = collapsed ? [] : cards
@@ -189,7 +200,11 @@ class Lane extends Component {
           {...card}
         />
       )
-      return draggable && cardDraggable ? <Draggable key={card.id}>{cardToRender}</Draggable> : <span key={card.id}>{cardToRender}</span>
+      return draggable && cardDraggable ? (
+        <Draggable key={card.id}>{cardToRender}</Draggable>
+      ) : (
+        <span key={card.id}>{cardToRender}</span>
+      )
     })
 
     return (
@@ -221,13 +236,13 @@ class Lane extends Component {
     return (
       <Popover className="menu" position="bottom" trigger={<MenuButton>⋮</MenuButton>}>
         <LaneMenuHeader>
-          <LaneMenuTitle>Lane actions</LaneMenuTitle>
+          <LaneMenuTitle>Ações</LaneMenuTitle>
           <DeleteWrapper>
             <GenDelButton>&#10006;</GenDelButton>
           </DeleteWrapper>
         </LaneMenuHeader>
         <LaneMenuContent>
-          <LaneMenuItem onClick={this.removeLane}>Delete Lane...</LaneMenuItem>
+          <LaneMenuItem onClick={this.removeLane}>Deletar...</LaneMenuItem>
         </LaneMenuContent>
       </Popover>
     )
@@ -271,7 +286,12 @@ class Lane extends Component {
     const {id, onLaneClick, onLaneScroll, onCardClick, onCardAdd, onCardDelete, ...otherProps} = this.props
     const allClassNames = classNames('react-trello-lane', this.props.className || '')
     return (
-      <Section {...otherProps} key={id} onClick={() => onLaneClick && onLaneClick(id)} draggable={false} className={allClassNames}>
+      <Section
+        {...otherProps}
+        key={id}
+        onClick={() => onLaneClick && onLaneClick(id)}
+        draggable={false}
+        className={allClassNames}>
         {this.renderHeader()}
         {this.renderDragContainer(isDraggingOver)}
         {loading && <Loader />}
