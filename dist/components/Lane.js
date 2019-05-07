@@ -257,6 +257,9 @@ class Lane extends _react.Component {
     });
     (0, _defineProperty2.default)(this, "removeLane", () => {
       const id = this.props.id;
+      this.props.onLaneDelete({
+        laneId: id
+      });
       this.props.actions.removeLane({
         laneId: id
       });
@@ -389,7 +392,8 @@ Lane.propTypes = {
   editable: _propTypes.default.bool,
   cardDraggable: _propTypes.default.bool,
   cardDragClass: _propTypes.default.string,
-  canAddLanes: _propTypes.default.bool
+  canAddLanes: _propTypes.default.bool,
+  onLaneDelete: _propTypes.default.func
 };
 Lane.defaultProps = {
   style: {},

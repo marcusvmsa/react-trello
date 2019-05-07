@@ -229,6 +229,7 @@ class Lane extends Component {
 
   removeLane = () => {
     const {id} = this.props
+    this.props.onLaneDelete({laneId: id})
     this.props.actions.removeLane({laneId: id})
   }
 
@@ -333,7 +334,8 @@ Lane.propTypes = {
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
-  canAddLanes: PropTypes.bool
+  canAddLanes: PropTypes.bool,
+  onLaneDelete: PropTypes.func
 }
 
 Lane.defaultProps = {

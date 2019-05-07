@@ -10,7 +10,7 @@ import {BoardDiv, LaneSection} from '../styles/Base'
 import {NewLaneButton} from '../styles/Elements'
 import Lane from './Lane'
 import NewLane from './NewLane'
-import { PopoverWrapper } from '@terebentina/react-popover'
+import {PopoverWrapper} from '@terebentina/react-popover'
 
 import * as boardActions from '../actions/BoardActions'
 import * as laneActions from '../actions/LaneActions'
@@ -119,7 +119,26 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardClick, onLaneClick, onLaneAdd, onCardDelete, onCardAdd, addLaneTitle, editable, canAddLanes, ...otherProps} = this.props
+    const {
+      id,
+      reducerData,
+      draggable,
+      laneDraggable,
+      laneDragClass,
+      style,
+      onDataChange,
+      onLaneScroll,
+      onCardClick,
+      onLaneClick,
+      onLaneAdd,
+      onLaneDelete,
+      onCardDelete,
+      onCardAdd,
+      addLaneTitle,
+      editable,
+      canAddLanes,
+      ...otherProps
+    } = this.props
     const {addLaneMode} = this.state
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
@@ -152,32 +171,37 @@ class BoardContainer extends Component {
     return (
       <BoardDiv style={style} {...otherProps} draggable={false}>
         <PopoverWrapper>
-        <Container
-          orientation="horizontal"
-          onDragStart={this.onDragStart}
-          dragClass={laneDragClass}
-          dropClass=""
-          onDrop={this.onLaneDrop}
-          lockAxis="x"
-          getChildPayload={index => this.getLaneDetails(index)}
-          groupName={this.groupName}>
-          {reducerData.lanes.map((lane, index) => {
-            const {id, droppable, ...otherProps} = lane
-            const laneToRender = (
-              <Lane
-                key={id}
-                boardId={this.groupName}
-                id={id}
-                getCardDetails={this.getCardDetails}
-                index={index}
-                droppable={droppable === undefined ? true : droppable}
-                {...otherProps}
-                {...passthroughProps}
-              />
-            )
-            return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
-          })}
-        </Container>
+          <Container
+            orientation="horizontal"
+            onDragStart={this.onDragStart}
+            dragClass={laneDragClass}
+            dropClass=""
+            onDrop={this.onLaneDrop}
+            lockAxis="x"
+            getChildPayload={index => this.getLaneDetails(index)}
+            groupName={this.groupName}>
+            {reducerData.lanes.map((lane, index) => {
+              const {id, droppable, ...otherProps} = lane
+              const laneToRender = (
+                <Lane
+                  key={id}
+                  boardId={this.groupName}
+                  id={id}
+                  getCardDetails={this.getCardDetails}
+                  index={index}
+                  droppable={droppable === undefined ? true : droppable}
+                  oiLaneDelete={onLaneDelete}
+                  {...otherProps}
+                  {...passthroughProps}
+                />
+              )
+              return draggable && laneDraggable ? (
+                <Draggable key={lane.id}>{laneToRender}</Draggable>
+              ) : (
+                <span key={lane.id}>{laneToRender}</span>
+              )
+            })}
+          </Container>
         </PopoverWrapper>
         {canAddLanes && (
           <Container orientation="horizontal">
@@ -208,6 +232,7 @@ BoardContainer.propTypes = {
   onCardAdd: PropTypes.func,
   addCardLink: PropTypes.node,
   onLaneAdd: PropTypes.func,
+  onLaneDelete: PropTypes.func,
   onLaneClick: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
@@ -239,6 +264,7 @@ BoardContainer.defaultProps = {
   handleLaneDragStart: () => {},
   handleLaneDragEnd: () => {},
   onLaneAdd: () => {},
+  onLaneDelete: () => {},
   editable: false,
   canAddLanes: false,
   hideCardDeleteIcon: false,
