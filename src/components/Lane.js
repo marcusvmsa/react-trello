@@ -235,11 +235,11 @@ class Lane extends Component {
 
   laneMenu = () => {
     return (
-      <Popover className="menu" position="bottom" trigger={<MenuButton>⋮</MenuButton>}>
+      <Popover className="menu" position="bottom" trigger={<MenuButton>...</MenuButton>}>
         <LaneMenuHeader>
           <LaneMenuTitle>Ações</LaneMenuTitle>
           <DeleteWrapper>
-            <GenDelButton>&#10006;</GenDelButton>
+            <GenDelButton>X</GenDelButton>
           </DeleteWrapper>
         </LaneMenuHeader>
         <LaneMenuContent>

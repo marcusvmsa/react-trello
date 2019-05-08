@@ -19,7 +19,9 @@ export const GlobalStyle = createGlobalStyle`
     flex-flow: column nowrap;
     background-color: #fff;
     color: #000;
-    padding: 5px; }
+    padding: 5px;
+    width: 15px;
+  }
     .popover .popover__content::before {
       content: "";
       position: absolute;
@@ -56,6 +58,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-user-modify: read-write-plaintext-only;
   }
   .comPlainTextContentEditable:focus {
+    padding: 8px;
     outline: none;
     border: 1px solid #006a95;
   }

@@ -268,8 +268,8 @@ class Lane extends _react.Component {
       return _react.default.createElement(_reactPopover.default, {
         className: "menu",
         position: "bottom",
-        trigger: _react.default.createElement(_Elements.MenuButton, null, "\u22EE")
-      }, _react.default.createElement(_Elements.LaneMenuHeader, null, _react.default.createElement(_Elements.LaneMenuTitle, null, "A\xE7\xF5es"), _react.default.createElement(_Elements.DeleteWrapper, null, _react.default.createElement(_Elements.GenDelButton, null, "\u2716"))), _react.default.createElement(_Elements.LaneMenuContent, null, _react.default.createElement(_Elements.LaneMenuItem, {
+        trigger: _react.default.createElement(_Elements.MenuButton, null, "...")
+      }, _react.default.createElement(_Elements.LaneMenuHeader, null, _react.default.createElement(_Elements.LaneMenuTitle, null, "A\xE7\xF5es"), _react.default.createElement(_Elements.DeleteWrapper, null, _react.default.createElement(_Elements.GenDelButton, null, "X"))), _react.default.createElement(_Elements.LaneMenuContent, null, _react.default.createElement(_Elements.LaneMenuItem, {
         onClick: this.removeLane
       }, "Deletar...")));
     });
