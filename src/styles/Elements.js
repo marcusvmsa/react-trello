@@ -48,10 +48,10 @@ export const MenuButton = styled.button`
   border: none;
   outline: none;
   font-size: 20px;
-  height: 15px;
-  line-height: 1px;
-  margin: 0 0 8px;
-  padding: 5px;
+  height: 18px;
+  line-height: 18px;
+  margin: 0 0 12px;
+  padding: 0px;
   text-align: center;
   width: 15px;
   background: inherit;

@@ -7,7 +7,12 @@ export const GlobalStyle = createGlobalStyle`
     right: 10px;
   }
   .popover .popover__trigger {
-    padding: 5px;
+    display: flex;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
   }
   .popover .popover__trigger:hover {
     background-color: rgba(9,30,66,.13);
