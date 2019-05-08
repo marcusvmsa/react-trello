@@ -47,58 +47,60 @@ export const MenuButton = styled.button`
   display: inline-block;
   border: none;
   outline: none;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
   height: 15px;
   line-height: 1px;
   margin: 0 0 8px;
-  padding: 0;
+  padding: 5px;
   text-align: center;
   width: 15px;
   background: inherit;
   cursor: pointer;
+  &:hover {
+    background-color: rgba(9, 30, 66, 0.13);
+  }
 `
 
 export const LaneMenuHeader = styled.div`
-    position: relative;
-    margin-bottom: 4px;
-    text-align: center;
+  position: relative;
+  margin-bottom: 4px;
+  text-align: center;
 `
 
 export const LaneMenuContent = styled.div`
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding: 0 12px 12px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0 12px 12px;
 `
 
 export const LaneMenuItem = styled.div`
-    cursor: pointer;
-    display: block;
-    font-weight: 700;
-    padding: 6px 12px;
-    position: relative;
-    margin: 0 -12px;
-    text-decoration: none;
-    
-    &:hover {
-      background-color: #3179BA;
-      color: #fff;
-    }
+  cursor: pointer;
+  display: block;
+  font-weight: 700;
+  padding: 6px 12px;
+  position: relative;
+  margin: 0 -12px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #3179ba;
+    color: #fff;
+  }
 `
 
 export const LaneMenuTitle = styled.span`
-    box-sizing: border-box;
-    color: #6b808c;
-    display: block;
-    line-height: 30px;
-    border-bottom: 1px solid rgba(9,45,66,.13);
-    margin: 0 6px;
-    overflow: hidden;
-    padding: 0 32px;
-    position: relative;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    z-index: 1;
+  box-sizing: border-box;
+  color: #6b808c;
+  display: block;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(9, 45, 66, 0.13);
+  margin: 0 6px;
+  overflow: hidden;
+  padding: 0 32px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 1;
 `
 
 export const DeleteIcon = styled.span`

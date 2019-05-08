@@ -3,9 +3,15 @@ import styled, {createGlobalStyle} from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
   .popover {
-  position: absolute;
+    position: absolute;
     right: 10px;
-   }
+  }
+  .popover .popover__trigger {
+    padding: 5px;
+  }
+  .popover .popover__trigger:hover {
+    background-color: rgba(9,30,66,.13);
+  }
   .popover .popover__content {
     visibility: hidden;
     margin-top: -5px;
@@ -20,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #fff;
     color: #000;
     padding: 5px;
-    width: 15px;
+    width: 175px;
   }
     .popover .popover__content::before {
       content: "";

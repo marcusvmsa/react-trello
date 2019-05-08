@@ -84,7 +84,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n    box-sizing: border-box;\n    color: #6b808c;\n    display: block;\n    line-height: 30px;\n    border-bottom: 1px solid rgba(9,45,66,.13);\n    margin: 0 6px;\n    overflow: hidden;\n    padding: 0 32px;\n    position: relative;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    z-index: 1;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  box-sizing: border-box;\n  color: #6b808c;\n  display: block;\n  line-height: 30px;\n  border-bottom: 1px solid rgba(9, 45, 66, 0.13);\n  margin: 0 6px;\n  overflow: hidden;\n  padding: 0 32px;\n  position: relative;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  z-index: 1;\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -94,7 +94,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n    cursor: pointer;\n    display: block;\n    font-weight: 700;\n    padding: 6px 12px;\n    position: relative;\n    margin: 0 -12px;\n    text-decoration: none;\n    \n    &:hover {\n      background-color: #3179BA;\n      color: #fff;\n    }\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  cursor: pointer;\n  display: block;\n  font-weight: 700;\n  padding: 6px 12px;\n  position: relative;\n  margin: 0 -12px;\n  text-decoration: none;\n\n  &:hover {\n    background-color: #3179ba;\n    color: #fff;\n  }\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -104,7 +104,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n    overflow-x: hidden;\n    overflow-y: auto;\n    padding: 0 12px 12px;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  overflow-x: hidden;\n  overflow-y: auto;\n  padding: 0 12px 12px;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -114,7 +114,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n    position: relative;\n    margin-bottom: 4px;\n    text-align: center;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  position: relative;\n  margin-bottom: 4px;\n  text-align: center;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -124,7 +124,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  transition: all 0.5s ease;\n  display: inline-block;\n  border: none;\n  outline: none;\n  font-size: 16px;\n  font-weight: bold;\n  height: 15px;\n  line-height: 1px;\n  margin: 0 0 8px;\n  padding: 0;\n  text-align: center;\n  width: 15px;\n  background: inherit;\n  cursor: pointer;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  transition: all 0.5s ease;\n  display: inline-block;\n  border: none;\n  outline: none;\n  font-size: 20px;\n  height: 15px;\n  line-height: 1px;\n  margin: 0 0 8px;\n  padding: 5px;\n  text-align: center;\n  width: 15px;\n  background: inherit;\n  cursor: pointer;\n  &:hover {\n    background-color: rgba(9, 30, 66, 0.13);\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
