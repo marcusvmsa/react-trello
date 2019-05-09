@@ -54,7 +54,7 @@ export const MenuButton = styled.button`
   padding: 0px;
   text-align: center;
   width: 15px;
-  background: inherit;
+  background: transparent;
   cursor: pointer;
   &:hover {
     background-color: rgba(9, 30, 66, 0.13);
