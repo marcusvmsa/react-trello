@@ -13,6 +13,8 @@ export const GlobalStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
     border-radius: 3px;
+    position: relative;
+    top: -4px;
   }
   .popover .popover__trigger:hover {
     background-color: rgba(9,30,66,.13);
