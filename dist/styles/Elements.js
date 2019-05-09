@@ -124,7 +124,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  transition: all 0.5s ease;\n  display: inline-block;\n  border: none;\n  outline: none;\n  font-size: 20px;\n  height: 15px;\n  line-height: 1px;\n  margin: 0 0 8px;\n  padding: 5px;\n  text-align: center;\n  width: 15px;\n  background: inherit;\n  cursor: pointer;\n  &:hover {\n    background-color: rgba(9, 30, 66, 0.13);\n  }\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  transition: all 0.5s ease;\n  display: inline-block;\n  border: none;\n  outline: none;\n  font-size: 20px;\n  height: 18px;\n  line-height: 18px;\n  margin: 0 0 12px;\n  padding: 0px;\n  text-align: center;\n  width: 15px;\n  background: transparent !important;\n  cursor: pointer;\n  &:hover {\n    background-color: rgba(9, 30, 66, 0.13);\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
