@@ -130,8 +130,8 @@ class BoardContainer extends _react.Component {
       });
     });
     (0, _defineProperty2.default)(this, "addNewLane", params => {
-      this.hideEditableLane();
-      this.props.actions.addLane(params);
+      this.hideEditableLane(); // this.props.actions.addLane(params)
+
       this.props.onLaneAdd(params);
     });
     (0, _defineProperty2.default)(this, "renderNewLane", () => {

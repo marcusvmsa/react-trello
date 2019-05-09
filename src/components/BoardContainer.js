@@ -96,7 +96,7 @@ class BoardContainer extends Component {
 
   addNewLane = params => {
     this.hideEditableLane()
-    this.props.actions.addLane(params)
+    // this.props.actions.addLane(params)
     this.props.onLaneAdd(params)
   }
 
