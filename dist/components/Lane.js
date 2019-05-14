@@ -255,6 +255,12 @@ class Lane extends _react.Component {
         getChildPayload: index => this.props.getCardDetails(id, index)
       }, cardList), editable && !addCardMode && this.renderAddCardLink(), addCardMode && this.renderNewCard());
     });
+    (0, _defineProperty2.default)(this, "editLane", () => {
+      const id = this.props.id;
+      this.props.onLaneEdit({
+        laneId: id
+      });
+    });
     (0, _defineProperty2.default)(this, "removeLane", () => {
       const id = this.props.id;
       this.props.onLaneDelete({
@@ -270,6 +276,8 @@ class Lane extends _react.Component {
         position: "bottom",
         trigger: _react.default.createElement(_Elements.MenuButton, null, "...")
       }, _react.default.createElement(_Elements.LaneMenuHeader, null, _react.default.createElement(_Elements.LaneMenuTitle, null, "A\xE7\xF5es"), _react.default.createElement(_Elements.DeleteWrapper, null, _react.default.createElement(_Elements.GenDelButton, null, "X"))), _react.default.createElement(_Elements.LaneMenuContent, null, _react.default.createElement(_Elements.LaneMenuItem, {
+        onClick: this.editLane
+      }, "Editar..."), _react.default.createElement(_Elements.LaneMenuItem, {
         onClick: this.removeLane
       }, "Deletar...")));
     });
@@ -393,6 +401,7 @@ Lane.propTypes = {
   cardDraggable: _propTypes.default.bool,
   cardDragClass: _propTypes.default.string,
   canAddLanes: _propTypes.default.bool,
+  onLaneEdit: _propTypes.default.func,
   onLaneDelete: _propTypes.default.func
 };
 Lane.defaultProps = {

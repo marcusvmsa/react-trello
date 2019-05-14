@@ -227,6 +227,11 @@ class Lane extends Component {
     )
   }
 
+  editLane = () => {
+    const {id} = this.props
+    this.props.onLaneEdit({laneId: id})
+  }
+
   removeLane = () => {
     const {id} = this.props
     this.props.onLaneDelete({laneId: id})
@@ -243,6 +248,7 @@ class Lane extends Component {
           </DeleteWrapper>
         </LaneMenuHeader>
         <LaneMenuContent>
+          <LaneMenuItem onClick={this.editLane}>Editar...</LaneMenuItem>
           <LaneMenuItem onClick={this.removeLane}>Deletar...</LaneMenuItem>
         </LaneMenuContent>
       </Popover>
@@ -335,6 +341,7 @@ Lane.propTypes = {
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
   canAddLanes: PropTypes.bool,
+  onLaneEdit: PropTypes.func,
   onLaneDelete: PropTypes.func
 }
 

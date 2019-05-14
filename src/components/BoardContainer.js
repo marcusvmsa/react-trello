@@ -132,6 +132,7 @@ class BoardContainer extends Component {
       onLaneClick,
       onLaneAdd,
       onLaneDelete,
+      onLaneEdit,
       onCardDelete,
       onCardAdd,
       addLaneTitle,
@@ -190,6 +191,7 @@ class BoardContainer extends Component {
                   getCardDetails={this.getCardDetails}
                   index={index}
                   droppable={droppable === undefined ? true : droppable}
+                  onLaneEdit={onLaneEdit}
                   onLaneDelete={onLaneDelete}
                   {...otherProps}
                   {...passthroughProps}
@@ -232,6 +234,7 @@ BoardContainer.propTypes = {
   onCardAdd: PropTypes.func,
   addCardLink: PropTypes.node,
   onLaneAdd: PropTypes.func,
+  onLaneEdit: PropTypes.func,
   onLaneDelete: PropTypes.func,
   onLaneClick: PropTypes.func,
   laneSortFunction: PropTypes.func,
@@ -264,6 +267,7 @@ BoardContainer.defaultProps = {
   handleLaneDragStart: () => {},
   handleLaneDragEnd: () => {},
   onLaneAdd: () => {},
+  onLaneEdit: () => {},
   onLaneDelete: () => {},
   editable: false,
   canAddLanes: false,

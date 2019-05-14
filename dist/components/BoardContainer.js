@@ -200,12 +200,13 @@ class BoardContainer extends _react.Component {
           onLaneClick = _this$props5.onLaneClick,
           onLaneAdd = _this$props5.onLaneAdd,
           onLaneDelete = _this$props5.onLaneDelete,
+          onLaneEdit = _this$props5.onLaneEdit,
           onCardDelete = _this$props5.onCardDelete,
           onCardAdd = _this$props5.onCardAdd,
           addLaneTitle = _this$props5.addLaneTitle,
           editable = _this$props5.editable,
           canAddLanes = _this$props5.canAddLanes,
-          otherProps = (0, _objectWithoutProperties2.default)(_this$props5, ["id", "reducerData", "draggable", "laneDraggable", "laneDragClass", "style", "onDataChange", "onLaneScroll", "onCardClick", "onLaneClick", "onLaneAdd", "onLaneDelete", "onCardDelete", "onCardAdd", "addLaneTitle", "editable", "canAddLanes"]);
+          otherProps = (0, _objectWithoutProperties2.default)(_this$props5, ["id", "reducerData", "draggable", "laneDraggable", "laneDragClass", "style", "onDataChange", "onLaneScroll", "onCardClick", "onLaneClick", "onLaneAdd", "onLaneDelete", "onLaneEdit", "onCardDelete", "onCardAdd", "addLaneTitle", "editable", "canAddLanes"]);
     const addLaneMode = this.state.addLaneMode; // Stick to whitelisting attributes to segregate board and lane props
 
     const passthroughProps = (0, _pick.default)(this.props, ['onLaneScroll', 'onCardClick', 'onCardDelete', 'onCardAdd', 'onLaneClick', 'addCardLink', 'laneSortFunction', 'draggable', 'cardDraggable', 'collapsibleLanes', 'editable', 'canAddLanes', 'hideCardDeleteIcon', 'customCardLayout', 'customLaneHeader', 'tagStyle', 'handleDragStart', 'handleDragEnd', 'cardDragClass', 'children', 'addLaneTitle', 'addCardTitle', 'newLaneTemplate', 'newCardTemplate']);
@@ -234,6 +235,7 @@ class BoardContainer extends _react.Component {
         getCardDetails: this.getCardDetails,
         index: index,
         droppable: droppable === undefined ? true : droppable,
+        onLaneEdit: onLaneEdit,
         onLaneDelete: onLaneDelete
       }, otherProps, passthroughProps));
 
@@ -268,6 +270,7 @@ BoardContainer.propTypes = {
   onCardAdd: _propTypes.default.func,
   addCardLink: _propTypes.default.node,
   onLaneAdd: _propTypes.default.func,
+  onLaneEdit: _propTypes.default.func,
   onLaneDelete: _propTypes.default.func,
   onLaneClick: _propTypes.default.func,
   laneSortFunction: _propTypes.default.func,
@@ -299,6 +302,7 @@ BoardContainer.defaultProps = {
   handleLaneDragStart: () => {},
   handleLaneDragEnd: () => {},
   onLaneAdd: () => {},
+  onLaneEdit: () => {},
   onLaneDelete: () => {},
   editable: false,
   canAddLanes: false,
