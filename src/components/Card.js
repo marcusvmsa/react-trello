@@ -19,6 +19,7 @@ class Card extends Component {
       return React.cloneElement(customCard, {...otherProps})
     } else {
       const {title, description, label, tags, createdAt} = this.props
+      console.log('TCL: Card -> renderBody -> createdAt', createdAt)
       return (
         <span>
           <CardHeader>
@@ -89,7 +90,7 @@ Card.propTypes = {
   onClick: PropTypes.func,
   onDelete: PropTypes.func,
   metadata: PropTypes.object,
-  createdAt: PropTypes.date,
+  createdAt: PropTypes.instanceOf(Date),
   cardStyle: PropTypes.object,
   dragStyle: PropTypes.object,
   tagStyle: PropTypes.object,

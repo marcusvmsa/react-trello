@@ -55,6 +55,7 @@ class Card extends _react.Component {
               label = _this$props3.label,
               tags = _this$props3.tags,
               createdAt = _this$props3.createdAt;
+        console.log('TCL: Card -> renderBody -> createdAt', createdAt);
         return _react.default.createElement("span", null, _react.default.createElement(_Base.CardHeader, null, _react.default.createElement(_Base.CardTitle, null, title), _react.default.createElement(_Base.CardRightContent, null, label)), _react.default.createElement(_Base.Detail, null, description), tags && _react.default.createElement(_Base.Footer, null, tags.map(tag => _react.default.createElement(_Tag.default, (0, _extends2.default)({
           key: tag.title
         }, tag, {
@@ -109,7 +110,7 @@ Card.propTypes = {
   onClick: _propTypes.default.func,
   onDelete: _propTypes.default.func,
   metadata: _propTypes.default.object,
-  createdAt: _propTypes.default.date,
+  createdAt: _propTypes.default.instanceOf(Date),
   cardStyle: _propTypes.default.object,
   dragStyle: _propTypes.default.object,
   tagStyle: _propTypes.default.object,
