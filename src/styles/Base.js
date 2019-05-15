@@ -209,6 +209,10 @@ export const CardRightContent = styled(RightContent)`
   font-size: 10px;
 `
 
+export const CreatedAt = styled.span`
+  font-size: 10px;
+`
+
 export const Detail = styled.div`
   font-size: 12px;
   color: #4d4d4d;

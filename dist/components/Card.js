@@ -53,12 +53,13 @@ class Card extends _react.Component {
               title = _this$props3.title,
               description = _this$props3.description,
               label = _this$props3.label,
-              tags = _this$props3.tags;
+              tags = _this$props3.tags,
+              metadata = _this$props3.metadata;
         return _react.default.createElement("span", null, _react.default.createElement(_Base.CardHeader, null, _react.default.createElement(_Base.CardTitle, null, title), _react.default.createElement(_Base.CardRightContent, null, label)), _react.default.createElement(_Base.Detail, null, description), tags && _react.default.createElement(_Base.Footer, null, tags.map(tag => _react.default.createElement(_Tag.default, (0, _extends2.default)({
           key: tag.title
         }, tag, {
           tagStyle: this.props.tagStyle
-        })))));
+        })))), metadata.createdAt && _react.default.createElement(_Base.CreatedAt, null, metadata.createdAt));
       }
     });
   }

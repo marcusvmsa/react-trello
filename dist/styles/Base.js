@@ -7,14 +7,24 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.NewLaneButtons = exports.NewLaneSection = exports.LaneSection = exports.LaneTitle = exports.AddCardLink = exports.TagSpan = exports.Footer = exports.Detail = exports.CardRightContent = exports.CardTitle = exports.CardHeader = exports.MovableCardWrapper = exports.CardWrapper = exports.RightContent = exports.Title = exports.ScrollableLane = exports.LaneFooter = exports.LaneHeader = exports.Section = exports.Header = exports.BoardDiv = exports.GlobalStyle = void 0;
+exports.NewLaneButtons = exports.NewLaneSection = exports.LaneSection = exports.LaneTitle = exports.AddCardLink = exports.TagSpan = exports.Footer = exports.Detail = exports.CreatedAt = exports.CardRightContent = exports.CardTitle = exports.CardHeader = exports.MovableCardWrapper = exports.CardWrapper = exports.RightContent = exports.Title = exports.ScrollableLane = exports.LaneFooter = exports.LaneHeader = exports.Section = exports.Header = exports.BoardDiv = exports.GlobalStyle = void 0;
 
 var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
-function _templateObject22() {
+function _templateObject23() {
   const data = (0, _taggedTemplateLiteral2.default)(["\n  margin-top: 10px;\n"]);
+
+  _templateObject23 = function _templateObject23() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject22() {
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  background-color: #e0e3e6;\n"]);
 
   _templateObject22 = function _templateObject22() {
     return data;
@@ -24,7 +34,7 @@ function _templateObject22() {
 }
 
 function _templateObject21() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  background-color: #e0e3e6;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  background-color: #2b6aa3;\n  border-radius: 3px;\n  margin: 5px;\n  position: relative;\n  padding: 5px;\n  display: inline-flex;\n  height: auto;\n  flex-direction: column;\n"]);
 
   _templateObject21 = function _templateObject21() {
     return data;
@@ -34,7 +44,7 @@ function _templateObject21() {
 }
 
 function _templateObject20() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  background-color: #2b6aa3;\n  border-radius: 3px;\n  margin: 5px;\n  position: relative;\n  padding: 5px;\n  display: inline-flex;\n  height: auto;\n  flex-direction: column;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  font-size: 15px;\n  width: 268px;\n  height: auto;\n"]);
 
   _templateObject20 = function _templateObject20() {
     return data;
@@ -44,7 +54,7 @@ function _templateObject20() {
 }
 
 function _templateObject19() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  font-size: 15px;\n  width: 268px;\n  height: auto;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  border-radius: 0 0 3px 3px;\n  color: #838c91;\n  display: block;\n  padding: 5px 2px;\n  position: absolute;\n  text-decoration: none;\n  cursor: pointer;\n  bottom: 3px;\n\n  &:hover {\n    //background-color: #cdd2d4;\n    color: #4d4d4d;\n    text-decoration: underline;\n  }\n"]);
 
   _templateObject19 = function _templateObject19() {
     return data;
@@ -54,7 +64,7 @@ function _templateObject19() {
 }
 
 function _templateObject18() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  border-radius: 0 0 3px 3px;\n  color: #838c91;\n  display: block;\n  padding: 5px 2px;\n  position: absolute;\n  text-decoration: none;\n  cursor: pointer;\n  bottom: 3px;\n\n  &:hover {\n    //background-color: #cdd2d4;\n    color: #4d4d4d;\n    text-decoration: underline;\n  }\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  padding: 2px 3px;\n  border-radius: 3px;\n  margin: 2px 5px;\n  font-size: 70%;\n"]);
 
   _templateObject18 = function _templateObject18() {
     return data;
@@ -64,7 +74,7 @@ function _templateObject18() {
 }
 
 function _templateObject17() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  padding: 2px 3px;\n  border-radius: 3px;\n  margin: 2px 5px;\n  font-size: 70%;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  border-top: 1px solid #eee;\n  padding-top: 6px;\n  text-align: right;\n  display: flex;\n  justify-content: flex-end;\n  flex-direction: row;\n  flex-wrap: wrap;\n"]);
 
   _templateObject17 = function _templateObject17() {
     return data;
@@ -74,7 +84,7 @@ function _templateObject17() {
 }
 
 function _templateObject16() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  border-top: 1px solid #eee;\n  padding-top: 6px;\n  text-align: right;\n  display: flex;\n  justify-content: flex-end;\n  flex-direction: row;\n  flex-wrap: wrap;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  font-size: 12px;\n  color: #4d4d4d;\n  white-space: normal;\n"]);
 
   _templateObject16 = function _templateObject16() {
     return data;
@@ -84,7 +94,7 @@ function _templateObject16() {
 }
 
 function _templateObject15() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  font-size: 12px;\n  color: #4d4d4d;\n  white-space: normal;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  font-size: 10px;\n"]);
 
   _templateObject15 = function _templateObject15() {
     return data;
@@ -278,32 +288,36 @@ exports.CardTitle = CardTitle;
 const CardRightContent = (0, _styledComponents.default)(RightContent)(_templateObject14());
 exports.CardRightContent = CardRightContent;
 
-const Detail = _styledComponents.default.div(_templateObject15());
+const CreatedAt = _styledComponents.default.span(_templateObject15());
+
+exports.CreatedAt = CreatedAt;
+
+const Detail = _styledComponents.default.div(_templateObject16());
 
 exports.Detail = Detail;
 
-const Footer = _styledComponents.default.div(_templateObject16());
+const Footer = _styledComponents.default.div(_templateObject17());
 
 exports.Footer = Footer;
 
-const TagSpan = _styledComponents.default.span(_templateObject17());
+const TagSpan = _styledComponents.default.span(_templateObject18());
 
 exports.TagSpan = TagSpan;
 
-const AddCardLink = _styledComponents.default.a(_templateObject18());
+const AddCardLink = _styledComponents.default.a(_templateObject19());
 
 exports.AddCardLink = AddCardLink;
 
-const LaneTitle = _styledComponents.default.div(_templateObject19());
+const LaneTitle = _styledComponents.default.div(_templateObject20());
 
 exports.LaneTitle = LaneTitle;
 
-const LaneSection = _styledComponents.default.section(_templateObject20());
+const LaneSection = _styledComponents.default.section(_templateObject21());
 
 exports.LaneSection = LaneSection;
-const NewLaneSection = (0, _styledComponents.default)(LaneSection)(_templateObject21());
+const NewLaneSection = (0, _styledComponents.default)(LaneSection)(_templateObject22());
 exports.NewLaneSection = NewLaneSection;
 
-const NewLaneButtons = _styledComponents.default.div(_templateObject22());
+const NewLaneButtons = _styledComponents.default.div(_templateObject23());
 
 exports.NewLaneButtons = NewLaneButtons;

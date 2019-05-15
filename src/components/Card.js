@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper} from '../styles/Base'
+import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper, CreatedAt} from '../styles/Base'
 import Tag from './Tag'
 import DeleteButton from './widgets/DeleteButton'
 import classNames from 'classnames'
@@ -18,7 +18,7 @@ class Card extends Component {
       const {customCard, ...otherProps} = this.props
       return React.cloneElement(customCard, {...otherProps})
     } else {
-      const {title, description, label, tags} = this.props
+      const {title, description, label, tags, metadata} = this.props
       return (
         <span>
           <CardHeader>
@@ -33,13 +33,23 @@ class Card extends Component {
               ))}
             </Footer>
           )}
+          {metadata.createdAt && <CreatedAt>{metadata.createdAt}</CreatedAt>}
         </span>
       )
     }
   }
 
   render() {
-    const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, dragStyle, onDelete, ...otherProps} = this.props
+    const {
+      id,
+      cardStyle,
+      editable,
+      hideCardDeleteIcon,
+      customCardLayout,
+      dragStyle,
+      onDelete,
+      ...otherProps
+    } = this.props
     const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
     const allClassNames = classNames('react-trello-board', this.props.className || '')
     return (
