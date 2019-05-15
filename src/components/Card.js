@@ -18,7 +18,7 @@ class Card extends Component {
       const {customCard, ...otherProps} = this.props
       return React.cloneElement(customCard, {...otherProps})
     } else {
-      const {title, description, label, tags, metadata} = this.props
+      const {title, description, label, tags, createdAt} = this.props
       return (
         <span>
           <CardHeader>
@@ -33,7 +33,7 @@ class Card extends Component {
               ))}
             </Footer>
           )}
-          {metadata.createdAt && <CreatedAt>{metadata.createdAt}</CreatedAt>}
+          {createdAt && <CreatedAt>{createdAt}</CreatedAt>}
         </span>
       )
     }
@@ -89,6 +89,7 @@ Card.propTypes = {
   onClick: PropTypes.func,
   onDelete: PropTypes.func,
   metadata: PropTypes.object,
+  createdAt: PropTypes.date,
   cardStyle: PropTypes.object,
   dragStyle: PropTypes.object,
   tagStyle: PropTypes.object,
