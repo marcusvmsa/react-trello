@@ -111,7 +111,7 @@ Card.propTypes = {
   onClick: _propTypes.default.func,
   onDelete: _propTypes.default.func,
   metadata: _propTypes.default.object,
-  createdAt: _propTypes.default.String,
+  createdAt: _propTypes.default.string,
   cardStyle: _propTypes.default.object,
   dragStyle: _propTypes.default.object,
   tagStyle: _propTypes.default.object,
