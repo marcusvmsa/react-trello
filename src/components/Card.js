@@ -4,12 +4,10 @@ import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrap
 import Tag from './Tag'
 import DeleteButton from './widgets/DeleteButton'
 import classNames from 'classnames'
-import moment from 'moment'
 
 class Card extends Component {
   removeCard = e => {
     const {id, laneId, removeCard, onDelete} = this.props
-    removeCard(laneId, id)
     onDelete(id, laneId)
     e.stopPropagation()
   }
@@ -19,7 +17,7 @@ class Card extends Component {
       const {customCard, ...otherProps} = this.props
       return React.cloneElement(customCard, {...otherProps})
     } else {
-      const {title, description, label, tags, createdAt} = this.props
+      const {title, description, label, tags} = this.props
       return (
         <span>
           <CardHeader>
@@ -34,8 +32,6 @@ class Card extends Component {
               ))}
             </Footer>
           )}
-          <CreatedAt>{moment(createdAt).format('DD/MM HH:mm')}</CreatedAt>
-          {createdAt && <CreatedAt>{moment(createdAt).format('DD/MM HH:mm')}</CreatedAt>}
         </span>
       )
     }
@@ -91,7 +87,6 @@ Card.propTypes = {
   onClick: PropTypes.func,
   onDelete: PropTypes.func,
   metadata: PropTypes.object,
-  createdAt: PropTypes.string,
   cardStyle: PropTypes.object,
   dragStyle: PropTypes.object,
   tagStyle: PropTypes.object,

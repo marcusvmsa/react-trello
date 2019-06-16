@@ -29,8 +29,6 @@ var _DeleteButton = _interopRequireDefault(require("./widgets/DeleteButton"));
 
 var _classnames = _interopRequireDefault(require("classnames"));
 
-var _moment = _interopRequireDefault(require("moment"));
-
 class Card extends _react.Component {
   constructor(...args) {
     super(...args);
@@ -40,7 +38,6 @@ class Card extends _react.Component {
             laneId = _this$props.laneId,
             removeCard = _this$props.removeCard,
             onDelete = _this$props.onDelete;
-      removeCard(laneId, id);
       onDelete(id, laneId);
       e.stopPropagation();
     });
@@ -55,13 +52,12 @@ class Card extends _react.Component {
               title = _this$props3.title,
               description = _this$props3.description,
               label = _this$props3.label,
-              tags = _this$props3.tags,
-              createdAt = _this$props3.createdAt;
+              tags = _this$props3.tags;
         return _react.default.createElement("span", null, _react.default.createElement(_Base.CardHeader, null, _react.default.createElement(_Base.CardTitle, null, title), _react.default.createElement(_Base.CardRightContent, null, label)), _react.default.createElement(_Base.Detail, null, description), tags && _react.default.createElement(_Base.Footer, null, tags.map(tag => _react.default.createElement(_Tag.default, (0, _extends2.default)({
           key: tag.title
         }, tag, {
           tagStyle: this.props.tagStyle
-        })))), _react.default.createElement(_Base.CreatedAt, null, (0, _moment.default)(createdAt).format('DD/MM HH:mm')), createdAt && _react.default.createElement(_Base.CreatedAt, null, (0, _moment.default)(createdAt).format('DD/MM HH:mm')));
+        })))));
       }
     });
   }
@@ -111,7 +107,6 @@ Card.propTypes = {
   onClick: _propTypes.default.func,
   onDelete: _propTypes.default.func,
   metadata: _propTypes.default.object,
-  createdAt: _propTypes.default.string,
   cardStyle: _propTypes.default.object,
   dragStyle: _propTypes.default.object,
   tagStyle: _propTypes.default.object,
