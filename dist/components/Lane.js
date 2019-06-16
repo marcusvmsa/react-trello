@@ -266,9 +266,6 @@ class Lane extends _react.Component {
       this.props.onLaneDelete({
         laneId: id
       });
-      this.props.actions.removeLane({
-        laneId: id
-      });
     });
     (0, _defineProperty2.default)(this, "laneMenu", () => {
       return _react.default.createElement(_reactPopover.default, {

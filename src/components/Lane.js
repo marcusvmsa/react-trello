@@ -235,7 +235,6 @@ class Lane extends Component {
   removeLane = () => {
     const {id} = this.props
     this.props.onLaneDelete({laneId: id})
-    this.props.actions.removeLane({laneId: id})
   }
 
   laneMenu = () => {
