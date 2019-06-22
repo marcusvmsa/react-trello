@@ -54,7 +54,7 @@ function _templateObject20() {
 }
 
 function _templateObject19() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  border-radius: 0 0 3px 3px;\n  color: #838c91;\n  display: block;\n  padding: 5px 2px;\n  position: absolute;\n  text-decoration: none;\n  cursor: pointer;\n  bottom: 3px;\n\n  &:hover {\n    //background-color: #cdd2d4;\n    color: #4d4d4d;\n    text-decoration: underline;\n  }\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  border-radius: 0 0 3px 3px;\n  color: #838c91;\n  display: block;\n  padding: 5px 2px;\n  position: absolute;\n  text-decoration: none;\n  cursor: pointer;\n  bottom: 3px;\n  background: #e3e3e3;\n  width: 250px;\n\n  &:hover {\n    //background-color: #cdd2d4;\n    color: #4d4d4d;\n    text-decoration: underline;\n  }\n"]);
 
   _templateObject19 = function _templateObject19() {
     return data;
@@ -174,7 +174,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  flex: 1;\n  overflow-y: auto;\n  min-width: 250px;\n  overflow-x: hidden;\n  align-self: center;\n  max-height: 90vh;\n  padding-bottom: 30px;\n  margin-top: 10px;\n  flex-direction: column;\n  justify-content: space-between;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  flex: 1;\n  overflow-y: auto;\n  min-width: 250px;\n  overflow-x: hidden;\n  align-self: center;\n  max-height: calc(90vh - 150px);\n  padding-bottom: 30px;\n  margin-top: 10px;\n  flex-direction: column;\n  justify-content: space-between;\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;

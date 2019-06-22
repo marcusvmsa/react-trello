@@ -155,7 +155,7 @@ export const ScrollableLane = styled.div`
   min-width: 250px;
   overflow-x: hidden;
   align-self: center;
-  max-height: 90vh;
+  max-height: calc(90vh - 150px);
   padding-bottom: 30px;
   margin-top: 10px;
   flex-direction: column;
@@ -245,6 +245,8 @@ export const AddCardLink = styled.a`
   text-decoration: none;
   cursor: pointer;
   bottom: 3px;
+  background: #e3e3e3;
+  width: 250px;
 
   &:hover {
     //background-color: #cdd2d4;
