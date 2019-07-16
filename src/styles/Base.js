@@ -155,8 +155,8 @@ export const ScrollableLane = styled.div`
   min-width: 250px;
   overflow-x: hidden;
   align-self: center;
-  max-height: calc(90vh - 150px);
-  padding-bottom: 30px;
+  max-height: calc(90vh - 120px);
+  padding-bottom: 50px;
   margin-top: 10px;
   flex-direction: column;
   justify-content: space-between;

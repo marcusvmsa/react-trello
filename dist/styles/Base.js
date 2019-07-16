@@ -174,7 +174,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  const data = (0, _taggedTemplateLiteral2.default)(["\n  flex: 1;\n  overflow-y: auto;\n  min-width: 250px;\n  overflow-x: hidden;\n  align-self: center;\n  max-height: calc(90vh - 150px);\n  padding-bottom: 30px;\n  margin-top: 10px;\n  flex-direction: column;\n  justify-content: space-between;\n"]);
+  const data = (0, _taggedTemplateLiteral2.default)(["\n  flex: 1;\n  overflow-y: auto;\n  min-width: 250px;\n  overflow-x: hidden;\n  align-self: center;\n  max-height: calc(90vh - 120px);\n  padding-bottom: 50px;\n  margin-top: 10px;\n  flex-direction: column;\n  justify-content: space-between;\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;

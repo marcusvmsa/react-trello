@@ -174,30 +174,23 @@ class Lane extends _react.Component {
       return this.props.droppable && sourceContainerOptions.groupName === this.groupName;
     });
     (0, _defineProperty2.default)(this, "onDragEnd", (laneId, result) => {
-      const handleDragEnd = this.props.handleDragEnd;
-      const addedIndex = result.addedIndex,
-            payload = result.payload;
+      // const {handleDragEnd} = this.props
+      // const {addedIndex, payload} = result
       this.setState({
         isDraggingOver: false
-      });
-
-      if (addedIndex != null) {
-        const newCard = (0, _objectSpread2.default)({}, (0, _cloneDeep.default)(payload), {
-          laneId
-        });
-        const response = handleDragEnd ? handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, newCard) : true;
-
-        if (response === undefined || !!response) {
-          this.props.actions.moveCardAcrossLanes({
-            fromLaneId: payload.laneId,
-            toLaneId: laneId,
-            cardId: payload.id,
-            index: addedIndex
-          });
-        }
-
-        return response;
-      }
+      }); // if (addedIndex != null) {
+      //   const newCard = {...cloneDeep(payload), laneId}
+      //   // const response = handleDragEnd ? handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, newCard) : true
+      //   // if (response === undefined || !!response) {
+      //   //   this.props.actions.moveCardAcrossLanes({
+      //   //     fromLaneId: payload.laneId,
+      //   //     toLaneId: laneId,
+      //   //     cardId: payload.id,
+      //   //     index: addedIndex
+      //   //   })
+      //   // }
+      //   return response
+      // }
     });
     (0, _defineProperty2.default)(this, "renderDragContainer", isDraggingOver => {
       const _this$props3 = this.props,
