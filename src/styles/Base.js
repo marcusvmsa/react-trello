@@ -1,7 +1,9 @@
 import styled, {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-
+  .smooth-dnd-container {
+    padding-bottom: 20px;
+  }
   .popover {
     position: absolute;
     right: 10px;
